@@ -1,6 +1,5 @@
 import re
 
-#check weither an argument is of type Entity
 entity_pattern = r"^(\w+)(?:->(\w+))?$"
 def is_entity(argument:str):
         entity = re.match(entity_pattern,argument)
@@ -11,7 +10,6 @@ def is_entity(argument:str):
 
 
 
-#check weither an argument is of type Attribute
 attribute_pattern = r"^(\w+):(\w+)$"
 def is_attribute(argument:str):
     attribute = re.match(attribute_pattern,argument)
